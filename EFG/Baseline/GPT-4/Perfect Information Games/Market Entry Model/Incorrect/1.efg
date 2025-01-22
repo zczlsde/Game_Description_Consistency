@@ -1,0 +1,6 @@
+EFG 2 R "Market Entry Game" { "Firm 1" "Firm 2" }
+p "" 2 1 "" { "Enter" "Out" } 0
+p "" 1 1 "" { "Fight" "Accommodate" } 0
+t "" 1 "Firm 1 Accommodates" { x, x }  ; x is the payoff when Firm 1 accommodates, and both firms earn the same amount
+t "" 2 "Firm 1 Fights" { y, z }  ; y < z, Firm 1 earns less when fighting, Firm 2 earns more but the same as if accommodated
+t "" 3 "Firm 2 Outs" { w, 0 }  ; w > x, Firm 1 earns more if Firm 2 does not enter
